@@ -18,13 +18,15 @@ const Numbers = () => {
   console.log(useState(numbers));
 
   return (
-    <div>
+    <div className="num-container">
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
        
          {numbersState.map((number, key) =>(
-           <NumberButton key={key} number={number} />
+           <NumberButton 
+            key={key} 
+            number={number} />
          ))}
        
     </div>
